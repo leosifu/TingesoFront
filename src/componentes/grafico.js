@@ -1,5 +1,10 @@
 import React from 'react';
-import '../CSS/cards.css';
+
+import '../CSS/css/bootstrap.min.css';
+import '../CSS/css/bootstrap-responsive.min.css';
+import '../CSS/css/font-awesome.css';
+import '../CSS/css/pages/dashboard.css';
+import '../CSS/css/style.css';
 import '../CSS/graficos.css'
 
 var AmCharts = require("@amcharts/amcharts3-react");
@@ -97,18 +102,15 @@ class Grafico extends React.Component{
 
   render(){
     return(
-      <div class="my-3 my-md-5">
-        <div class="container">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Development Activity</h3>
-            </div>
-            <div id="chartdiv"></div>
-          </div>
+      <div class="widget">
+        <div class="widget-header"> <i class="icon-signal"></i>
+          <h3> Area Chart Example</h3>
+        </div>  
+        <div class="widget-content">
+          <div id="chartdiv"></div>
         </div>
-        </div>
-        </div>
+      </div>
+
     )
   }
 }

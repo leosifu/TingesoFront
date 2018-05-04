@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Cards from './componentes/cards';
+import Body from './componentes/body';
 import Nav from './componentes/nav';
-import Grafico from './componentes/grafico';
+import SuperNav from './componentes/SuperNav';
 
 class App extends Component {
   render() {
     return (
       <div>
+        <SuperNav/>
         <Nav/>
-        <Cards />
-        <Grafico />
+        <Body/>
       </div>
     );
   }
